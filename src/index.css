@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;700;900&family=Montserrat:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Kumbh Sans", sans-serif;
+  --font-aula: "Kumbh Sans", sans-serif;
+
+  /* Institutional Palette - Primary */
+  --color-aula-red: #EF3535;
+  --color-aula-yellow: #F2B733;
+  --color-aula-blue: #2455BB;
+  --color-aula-black: #1D1D1B;
+  --color-aula-gray-light: #BABABA;
+  --color-aula-gray-dark: #6D6D6D;
+
+  /* Institutional Palette - Complementary */
+  --color-aula-red-dark: #9D3135;
+  --color-aula-orange: #EA7735;
+  --color-aula-green: #597D73;
+  --color-aula-green-dark: #395149;
+  --color-aula-purple: #AA6488;
+  --color-aula-burgundy: #894559;
+  --color-aula-brown: #825939;
+  --color-aula-terracotta: #B55C3D;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-aula-black bg-white;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-black tracking-tight;
+  }
+  ::selection {
+    @apply bg-aula-red/10 text-aula-red;
+  }
+}
